@@ -33,7 +33,7 @@ const handler: NextApiHandler = async (req, res) => {
         const key_hashed = hashedKey(key);
         // 时信软件处理
         if(key=="时信软件"){
-          key = "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";
+          key = `${process.env.OPENAI_API_KEY}`;
         }
 
         if (!(await isValidUser(key_hashed))) {
