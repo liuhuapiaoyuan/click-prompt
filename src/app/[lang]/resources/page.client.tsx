@@ -39,13 +39,13 @@ function ReadingList({ locale, i18n }: GeneralI18nProps) {
   ];
   return (
     <SimpleGrid columns={1} spacing={10}>
-      <Alert status='info'>
+ {/*      <Alert status='info'>
         <AlertIcon />
         <AlertTitle>{dict["share-my-common-gpt-scene"]}</AlertTitle>
         <Link href={`${GITHUB_URL}/tree/dev/public/data`} isExternal>
           {dict["PR"]} <ExternalLinkIcon />
         </Link>
-      </Alert>
+      </Alert> */}
       <Heading as='h3'>{dict["AI-Resources"]}</Heading>
       {aiResource && <DataTable data={aiResource} columns={columns} />}
       <Heading as='h3'>中文</Heading>

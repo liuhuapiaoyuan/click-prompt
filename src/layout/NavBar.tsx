@@ -45,10 +45,10 @@ export default async function NavBar({ locale }: { locale: string }) {
         { url: `/stable-diffusion-generator/`, title: g("stable-diffusion-generator") },
       ],
     },
-    {
+/*     {
       title: "GitHub Copilot",
       children: [{ url: `/github-copilot-samples/`, title: g("github-copilot-samples") }],
-    },
+    }, */
     { url: `/resources/`, title: g("resources") },
   ];
 

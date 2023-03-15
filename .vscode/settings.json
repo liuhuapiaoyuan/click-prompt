@@ -19,4 +19,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "i18n-ally.localesPaths": [
+    "i18n",
+    "src/i18n"
+  ],
 }

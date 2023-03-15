@@ -42,7 +42,7 @@ async function Page() {
 
             <Stack mt='10' spacing='4' justify='center' direction={{ base: "column", sm: "row" }}>
               <Button as='a' size='lg' h='4rem' px='40px' fontSize='1.2rem' href={GITHUB_URL} target='__blank'>
-                GitHub
+                Home
               </Button>
               <ClickPromptButton size='lg' h='4rem' px='40px' text='Hello World' />
             </Stack>
