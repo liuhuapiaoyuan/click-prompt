@@ -20,7 +20,9 @@ const handler: NextApiHandler = async (req, res) => {
   }
 
   const userIdInCookie = req.cookies[SITE_USER_COOKIE];
-  let { key, action } = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+  const request = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+  const action = request.action
+  let key = request.key
 
   if (!action) {
     res.status(400).json({ error: "No query provided" });
